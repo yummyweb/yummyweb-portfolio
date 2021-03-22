@@ -8,12 +8,13 @@ interface ButtonProps {
     href?: string,
     onClick: () => void,
     variant?: 'transparent' | 'like',
-    disabled?: boolean
+    disabled?: boolean,
+    style?: any
 }
 
 const Button = ({ children, type, href, variant, onClick, disabled }: ButtonProps): JSX.Element => {
     const classes = cn(styles.button, styles[variant])
-    
+
     if (onClick || !href) {
         return (
           <button className={classes} type={type === 'submit' ? 'submit' : 'button'} onClick={onClick} disabled={disabled}>
