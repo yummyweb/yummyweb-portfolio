@@ -14,7 +14,7 @@ const Header = (): JSX.Element => {
             <ul>
                 {links.map(link => (
                     <li key={link.path}>
-                        <Link>{ link.name }</Link>
+                        <Link href={link.path}>{ link.name }</Link>
                     </li>
                 ))}
             </ul>
