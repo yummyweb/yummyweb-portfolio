@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import styles from '../styles/header.module.css'
+import styles from '../styles/header.module.scss'
 
 const Header = (): JSX.Element => {
     const links = [

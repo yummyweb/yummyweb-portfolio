@@ -1,0 +1,50 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg: #fff;
+    --text: #000;
+    --textTinted: rgba(0, 0, 0, 0.5);
+    --brand: #e38356;
+    --brandActive: #b3613b;
+    --brandTinted: rgba(227, 131, 86, 0.2);
+    --headerBg: rgba(255, 255, 255, 0.6);
+    --border: rgba(0, 0, 0, 0.08);
+    --borderActive: rgba(0, 0, 0, 0.25);
+    --star: #fece02;
+    --fontFamily: 'GT Walsheim Pro', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+      Helvetica Neue, sans-serif;
+    --boxBg: #f3f3f3;
+    --siteWidth: 83ch;
+    --inputBg: white;
+    --likeButton: rgba(0, 0, 0, 0.05);
+    --likeButtonHover: rgba(0, 0, 0, 0.1);
+    --shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    --secondary: #caca28;
+}
+  
+[data-theme='dark'] {
+    --bg: #161515;
+    --text: #fff;
+    --textTinted: rgba(255, 255, 255, 0.5);
+    --headerBg: rgba(22, 21, 21, 0.6);
+    --border: rgba(255, 255, 255, 0.08);
+    --borderActive: rgba(255, 255, 255, 0.25);
+    --boxBg: #1f1e1d;
+    --star: #fef102;
+    --inputBg: #292929;
+    --likeButton: rgba(255, 255, 255, 0.2);
+    --likeButtonHover: rgba(255, 255, 255, 0.3);
+    --secondary: yellow;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h1 {
+    font-size: 40px;
+}
