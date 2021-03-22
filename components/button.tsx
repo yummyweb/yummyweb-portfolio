@@ -6,7 +6,7 @@ interface ButtonProps {
     children: JSX.Element | JSX.Element[] | String,
     type?: "button" | "submit" | "reset",
     href?: string,
-    onClick: () => void,
+    onClick?: () => void,
     variant?: 'transparent' | 'like',
     disabled?: boolean,
     style?: any
