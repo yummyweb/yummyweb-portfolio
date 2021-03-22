@@ -1,7 +1,7 @@
 .container {
     margin: 0 auto;
     padding: 0 15px;
-    max-width: 83ch;
+    max-width: var(--siteWidth);
 }
 
 .main {

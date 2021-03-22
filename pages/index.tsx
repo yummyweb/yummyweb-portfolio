@@ -1,5 +1,5 @@
 import Header from '../components/header'
-import styles from '../styles/Home.module.scss'
+import styles from '../styles/index.module.scss'
 
 const Home = (): JSX.Element => {
   return (

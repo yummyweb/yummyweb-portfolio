@@ -7,14 +7,7 @@
     left: 0;
     z-index: 4;
     backdrop-filter: saturate(180%) blur(20px);
-}
-
-[data-theme='dark'] .header {
-    background-color: black;
-}
-
-[data-theme='white'] .header {
-    background-color: white;
+    background-color: var(--headerBg);
 }
 
 .header ul {
