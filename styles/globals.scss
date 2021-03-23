@@ -25,6 +25,8 @@
     --shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
     --secondary: #caca28;
 }
+
+$linkColor: #e963f5;
   
 [data-theme='dark'] {
     --bg: #161515;
@@ -53,4 +55,31 @@ h1 {
 
 a {
     text-decoration: none;
+}
+
+.link {
+    position: relative;
+    transition: clip-path 275ms ease;
+    &:hover span::before, &:focus span::before {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    span {
+        position: relative;
+        display: inline-block;
+        color: $linkColor;
+        &::before {
+            position: absolute;
+            content: attr(data-content);
+            color: darken($linkColor, 10%);
+            text-decoration: underline;
+            text-decoration-color: darken($linkColor, 10%);
+            clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
+            transition: clip-path 275ms ease;
+        }
+    }
+}
+
+.link span.dotted::before {
+    text-decoration-style: dotted;
 }
