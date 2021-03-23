@@ -21,9 +21,9 @@ const Home = (): JSX.Element => {
                 <HomeBlog />
               </div>
             </div>
+            <NowPlaying />
           </div>
         </Transition>
-        <NowPlaying />
         <Footer />
       </div>
     </>
