@@ -8,7 +8,7 @@ const Home = (): JSX.Element => {
   return (
     <>
       <div className={styles.container}>
-        <Header />
+        <Header active="Home" />
         <Transition>
           <div className={styles.main}>
             <h1><span className={styles.wave}>👋</span> Hi, my name is yum.</h1>

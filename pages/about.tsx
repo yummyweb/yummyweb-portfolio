@@ -7,7 +7,7 @@ const About = (): JSX.Element => {
   return (
     <>
       <div className={styles.container}>
-        <Header />
+        <Header active="About" />
         <Transition>
           <div className={styles.main}>
             <div className={styles.logoContainer}>

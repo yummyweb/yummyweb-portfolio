@@ -1,6 +1,6 @@
 .header {
     width: var(--siteWidth);
-    height: 9vh;
+    height: 9.5vh;
     position: fixed;
     top: -1px;
     right: 0;
@@ -24,6 +24,17 @@
 }
 
 .header a {
-    text-decoration: none;
+    color: rgb(180, 180, 180);
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.header a:hover {
     color: white;
+}
+
+.active {
+    color: white;
+    border-bottom: 2px solid var(--brandActive);
+    padding-bottom: 5px;
 }
