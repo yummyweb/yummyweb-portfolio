@@ -1,5 +1,6 @@
 import Button from '../components/button'
 import Header from '../components/header'
+import HomeBlog from '../components/home/blog'
 import styles from '../styles/index.module.scss'
 
 const Home = (): JSX.Element => {
@@ -12,6 +13,13 @@ const Home = (): JSX.Element => {
           <p className={styles.description}>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate odit animi quisquam, ipsam deserunt veritatis eligendi? Accusantium quos aut minus?</p>
           <br/>
           <Button href="/about">More About Me</Button>
+          <hr/>
+          <div className={styles.blogPosts}>
+            <h2>Check out my latest posts</h2>
+            <div>
+              <HomeBlog />
+            </div>
+          </div>
         </div>
       </div>
     </>

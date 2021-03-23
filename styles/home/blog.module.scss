@@ -1,0 +1,42 @@
+.blog {
+    display: flex;
+    justify-content: space-evenly;
+    width: 70vw;
+    margin-top: 50px;
+}
+
+.post {
+    padding: 60px 50px;
+    background-color: rgba(53, 49, 49, 0.6);
+    border-radius: 10px;
+}
+
+.post p {
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media only screen and (max-width: 1200px) {
+    .blog {
+        width: 100vw;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .post {
+        padding: 40px 30px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .blog {
+        flex-direction: column;
+        width: 50vw;
+    }
+
+    .post {
+        margin-top: 10px;
+    }
+}
