@@ -43,15 +43,15 @@
       margin-bottom: 0;
       color: var(--textTinted);
       font-weight: 500;
-      transition: color 0.2s ease-out;
-  
-      &:hover,
-      &:focus {
-        color: var(--text);
-      }
     }
 
     a {
         color: var(--textTinted);
+        transition: color 0.2s ease-out;
+        
+        &:hover,
+        &:focus {
+          color: var(--text);
+        }
     }
 }
