@@ -1,6 +1,7 @@
 import Footer from '../components/footer'
 import Header from '../components/header'
 import HomeBlog from '../components/home/blog'
+import NowPlaying from '../components/now-playing'
 import Transition from '../components/transition'
 import styles from '../styles/index.module.scss'
 
@@ -22,6 +23,7 @@ const Home = (): JSX.Element => {
             </div>
           </div>
         </Transition>
+        <NowPlaying />
         <Footer />
       </div>
     </>
