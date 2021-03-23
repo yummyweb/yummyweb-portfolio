@@ -1,5 +1,5 @@
 .header {
-    width: 100%;
+    width: var(--siteWidth);
     height: 9vh;
     position: fixed;
     top: -1px;
@@ -8,6 +8,7 @@
     z-index: 4;
     backdrop-filter: saturate(180%) blur(20px);
     background-color: var(--headerBg);
+    margin: 0 auto;
 }
 
 .header ul {
