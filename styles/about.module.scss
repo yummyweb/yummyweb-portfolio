@@ -33,3 +33,13 @@
      60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
     100% { transform: rotate( 0.0deg) }
 }
+
+.logoContainer {
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 4px solid black;
+    background-color: black;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 40px;
+}
