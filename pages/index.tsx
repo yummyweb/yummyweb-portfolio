@@ -8,7 +8,7 @@ const Home = (): JSX.Element => {
       <div className={styles.container}>
         <Header />
         <div className={styles.main}>
-          <h1>👋 Hi, my name is yum.</h1>
+          <h1><span className={styles.wave}>👋</span> Hi, my name is yum.</h1>
           <p className={styles.description}>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate odit animi quisquam, ipsam deserunt veritatis eligendi? Accusantium quos aut minus?</p>
           <br/>
           <Button href="/about">More About Me</Button>
