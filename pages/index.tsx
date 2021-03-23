@@ -1,4 +1,5 @@
 import Button from '../components/button'
+import Footer from '../components/footer'
 import Header from '../components/header'
 import HomeBlog from '../components/home/blog'
 import Transition from '../components/transition'
@@ -24,6 +25,7 @@ const Home = (): JSX.Element => {
             </div>
           </div>
         </Transition>
+        <Footer />
       </div>
     </>
   )

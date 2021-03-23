@@ -9,6 +9,12 @@
     padding: 60px 50px;
     background-color: rgba(53, 49, 49, 0.6);
     border-radius: 10px;
+    transition: 0.4s all ease;
+}
+
+.post:hover {
+    transform: scale(1.05);
+    transition: 0.4s all ease;
 }
 
 .post p {
