@@ -8,7 +8,7 @@ const Footer = () => {
         {name: "GitHub", url: "https://github.com/yummyweb"},
         {name: "About", url: "/about"},
         {name: "Dribbble", url: "https://dribbble.com"},
-        {name: "RSS", url: "/feed.xml"},
+        {name: "RSS", url: "/feed.xml", beta: true},
         {name: "Blog", url: "/blog"},
         {name: "Changelog", url: "/changelog", new: true},
         {name: "Projects", url: "/projects"},
@@ -22,7 +22,7 @@ const Footer = () => {
                 <li key={link.name}>
                     <Link href={link.url}>
                     <a>
-                        {link.name} {link.new && <span className={styles.badge}>New</span>}
+                        {link.name} {link.new && <span className={styles.newBadge}>New</span>} {link.beta && <span className={styles.betaBadge}>Beta</span>}
                     </a>
                     </Link>
                 </li>
