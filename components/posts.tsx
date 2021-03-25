@@ -8,4 +8,4 @@ const Posts = (): JSX.Element => {
     )
 }
 
-export default Posts: JSX.Element
+export default Posts
