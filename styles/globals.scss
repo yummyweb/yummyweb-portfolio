@@ -86,3 +86,9 @@ a {
 .link span.dotted::before {
     text-decoration-style: dotted;
 }
+
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: var(--siteWidth);
+}
