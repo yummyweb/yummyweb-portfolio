@@ -34,7 +34,7 @@
 }
 
 .active {
-    color: white;
+    color: white !important;
     border-bottom: 2px solid var(--brandActive);
     padding-bottom: 5px;
 }
