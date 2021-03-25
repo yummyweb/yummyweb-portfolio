@@ -9,7 +9,7 @@ const Home = (): JSX.Element => {
         <div className="main">
           <h1><span className={styles.wave}>👋</span> Hi, my name is yum.</h1>
           <p className={styles.description}>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate odit animi quisquam, ipsam deserunt veritatis eligendi? Accusantium quos aut minus?</p>
-          <hr/>
+          <hr />
           <div className={styles.blogPosts}>
             <h2>Check out my latest posts</h2>
             <div>

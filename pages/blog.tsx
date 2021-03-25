@@ -2,6 +2,8 @@ import { useState, useCallback } from 'react'
 import Page from '../components/page'
 import debounce from 'lodash.debounce'
 import Search from '../components/search'
+import Button from '../components/button'
+import styles from '../styles/blog.module.scss'
 
 export type BlogPosts = Array<{ content: string; filePath: string; meta: Meta }>
 
@@ -19,7 +21,10 @@ const Blog = ({ post }: BlogProps): JSX.Element => {
     return (
         <Page active="Blog">
             <div className="main">
-                <Search placeholder={"Search blog posts"} />
+                <div className={styles.search}>
+                    <Search placeholder={"Search blog posts"} />
+                    <Button>Search</Button>
+                </div>
             </div>
         </Page>
     )
