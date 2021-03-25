@@ -62,6 +62,11 @@ a {
 
 hr {
     margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+input:focus {
+    outline-color: var(--brandActive);
 }
 
 .link {

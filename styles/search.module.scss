@@ -1,6 +1,6 @@
 .searchBarContainer input {
-    border: 1px solid var(--brandTinted);
+    border: 1px solid var(--border);
+    border-radius: 6px;
     padding: 10px;
-    outline: none;
     width: 99%;
 }

@@ -6,3 +6,14 @@
 .search div {
     flex: 1;
 }
+
+.search input {
+    transition: all 150ms ease-out;
+    &:hover,
+    &:active,
+    &:focus {
+      border-color: var(--brand);
+      outline: none;
+      box-shadow: 0 0 0 4px var(--brandTinted);
+    }
+}
