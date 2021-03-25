@@ -2,7 +2,7 @@ import { useState, useCallback } from 'react'
 import Page from '../components/page'
 import Search from '../components/search'
 import styles from '../styles/blog.module.scss'
-import { Meta } from 'types'
+import { Meta } from '../types'
 
 export type BlogPosts = Array<{ content: string; filePath: string; meta: Meta }>
 
