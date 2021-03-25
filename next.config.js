@@ -1,5 +1,6 @@
 const path = require('path')
 const withMDX = require('@next/mdx')()
+require('module-alias/register')
 
 module.exports = withMDX({
   sassOptions: {
