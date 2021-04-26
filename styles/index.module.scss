@@ -28,3 +28,22 @@
     flex-direction: column;
     align-items: center;
 }
+
+.blog {
+    display: flex;
+}
+
+.post {
+    margin-top: 30px;
+    padding: 20px 30px;
+    background-color: var(--border);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px
+}
+
+.post h3 {
+    margin-bottom: 10px;
+}
