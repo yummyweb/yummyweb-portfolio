@@ -2,14 +2,14 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 const CustomLink = (props) => {
-    const href = props.href;
+    const href = props.href
     const isInternalLink = href && (href.startsWith('/') || href.startsWith('#'));
   
-    if (isInternalLink) {
+    if (href) {
       return (
-        <Link href={href}>
-          <a {...props} />
-        </Link>
+        <a className="link" href={props.href}>
+          <span className="dotted" data-content={props.content}>{props.content}</span>
+        </a>
       );
     }
   
