@@ -10,7 +10,7 @@ type BlogProps = {
     posts: BlogPosts
 }
 
-const Blog = ({ posts }: BlogProps): JSX.Element => {
+const Blog = (): JSX.Element => {
     const [search, setSearch] = useState('')
 
     return (

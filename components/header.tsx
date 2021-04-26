@@ -1,6 +1,6 @@
 import styles from '../styles/header.module.scss'
 
-const Header = (props): JSX.Element => {
+const Header = ({ active }: { active }): JSX.Element => {
     const links = [
         {name: "Home", path: "/"},
         {name: "About", path: "/about"},
@@ -13,7 +13,7 @@ const Header = (props): JSX.Element => {
             <ul>
                 {links.map(link => (
                     <li key={link.path}>
-                        <a className={link.name === props.active ? styles.active : ""} href={link.path}>{ link.name }</a>
+                        <a className={link.name === active ? styles.active : ""} href={link.path}>{ link.name }</a>
                     </li>
                 ))}
             </ul>
