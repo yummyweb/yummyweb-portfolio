@@ -9,7 +9,7 @@ const Custom404 = (): JSX.Element => {
             <title>Page Not Found | Yum</title>
         </Head>
       <div className={styles.container}>
-        <Header />
+        <Header active="Home" />
         <div className={styles.main}>
           <div className={styles.titleContainer}>
             <h1 data-text="404" className={styles.title}>404</h1>
