@@ -38,7 +38,7 @@ export default function BlogLayout({ children, frontMatter }: { children, frontM
                 By {frontMatter.author}
               </p>
             </div>
-            <p className="text-sm text-gray-500 min-w-32 mt-2 md:mt-0">
+            <p className={styles.by}>
               {frontMatter.readingTime.text}
               {` • `}
               {format(parseISO(frontMatter.publishedAt), 'MMMM dd, yyyy')}
