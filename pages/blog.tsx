@@ -20,6 +20,13 @@ interface IProps {
 const Blog = ({ posts }: IProps): JSX.Element => {
     const [search, setSearch] = useState('')
 
+    const filteredPosts = posts
+    .sort((a, b) => new Date(b.meta.publishedAt).getTime() - new Date(a.meta.publishedAt).getTime())
+    .filter(({ meta: { title, summary, tags } }) => {
+      const searchString = `${title.toLowerCase()} ${summary.toLowerCase()} ${tags?.join(' ')}`
+      return searchString.includes(search.toLowerCase())
+    })
+
     return (
         <Page active="Blog">
             <div className="main">
@@ -28,7 +35,7 @@ const Blog = ({ posts }: IProps): JSX.Element => {
                 <div className={styles.search}>
                     <Search value={search} onChange={e => setSearch(e.target.value)} placeholder={"Search blog posts"} />
                 </div>
-                <PostList posts={posts} />
+                <PostList posts={filteredPosts} />
             </div>
         </Page>
     )
