@@ -25,10 +25,8 @@ async function generate() {
       })
     }),
   )
-
+  // You need to be in root directory for this to execute properly
   await fs.writeFile('./public/feed.xml', feed.xml({ indent: true }))
 }
 
 generate()
-
-export {}
