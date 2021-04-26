@@ -28,23 +28,23 @@ export default function BlogLayout({ children, frontMatter }: { children, frontM
           <div>
             <div className={styles.publishedBy}>
               <Image
-                alt="yum"
+                alt={frontMatter.author}
                 height={24}
                 width={24}
                 src={frontMatter.authorImage}
                 className={styles.authorImage}
               />
-              <p className="text-sm text-gray-700 dark:text-gray-300 ml-2">
-                {frontMatter.by}
-                {'Lee Robinson / '}
-                {format(parseISO(frontMatter.publishedAt), 'MMMM dd, yyyy')}
+              <p className={styles.by}>
+                By {frontMatter.author}
               </p>
             </div>
             <p className="text-sm text-gray-500 min-w-32 mt-2 md:mt-0">
               {frontMatter.readingTime.text}
               {` • `}
+              {format(parseISO(frontMatter.publishedAt), 'MMMM dd, yyyy')}
+              {` • `}
               {/* <ViewCounter slug={frontMatter.slug} /> */}
-              1220
+              1220 views
             </p>
           </div>
           <div className="prose dark:prose-dark max-w-none w-full">
