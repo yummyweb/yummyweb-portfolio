@@ -2,7 +2,6 @@ import { getFiles, getFileBySlug } from '../../lib/mdx'
 import hydrate from 'next-mdx-remote/hydrate'
 import BlogLayout from '../../layout/blog'
 import MDXComponents from '../../components/MDXComponents'
-import Tweet from '../../components/tweet'
 
 const BlogPost = ({ mdxSource, tweets, frontMatter }) => {
     const content = hydrate(mdxSource, {
