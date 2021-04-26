@@ -1,6 +1,5 @@
 .posts {
-    margin: 0;
-    margin-bottom: 60px;
+    margin-top: 6rem;
     padding: 0;
     list-style: none;
 
@@ -11,21 +10,25 @@
 
 .title {
     display: block;
+    margin-top: 30px;
     margin-bottom: 10px;
     color: var(--brand);
     font-weight: 700;
     font-size: 22px;
+    margin-left: 20px;
 }
 
 .summary {
     margin-bottom: 10px;
     font-size: 18px;
     opacity: 0.7;
+    margin-left: 20px;
 }
 
 .meta {
     font-size: 0.95em;
     opacity: 0.5;
+    margin-left: 20px;
 }
 
 .noResults {
@@ -33,4 +36,8 @@
     font-weight: 500;
     font-size: 22px;
     text-align: center;
+}
+
+.imgWrapper img {
+    border-radius: 20px;
 }
