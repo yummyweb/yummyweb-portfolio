@@ -14,6 +14,7 @@
     "comma-number": "^2.0.1",
     "date-fns": "^2.21.1",
     "framer-motion": "^4.0.0",
+    "globby": "^11.0.3",
     "gray-matter": "^4.0.3",
     "isomorphic-unfetch": "^3.1.0",
     "lodash.debounce": "^4.0.8",
@@ -31,6 +32,7 @@
     "remark-autolink-headings": "^6.0.1",
     "remark-code-titles": "^0.1.1",
     "remark-slug": "^6.0.0",
+    "rss": "^1.2.2",
     "sass": "^1.32.8",
     "swr": "^0.5.4"
   },
