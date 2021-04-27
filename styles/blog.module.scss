@@ -167,3 +167,19 @@
     width: 90px;
     justify-content: space-between;
 }
+
+.tweetButton {
+    padding: 20px;
+    background-color: var(--boxBg);
+    border: 1px solid var(--border);
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+.tweetButton span {
+    color: var(--text);
+}
