@@ -5,14 +5,7 @@ import styles from '../styles/blog.module.scss'
 import Page from '../components/page'
 // import ViewCounter from '@/components/ViewCounter'
 
-const editUrl = (slug) =>
-  `https://github.com/yummyweb/yummyweb-portfolio/edit/main/data/blog/${slug}.mdx`;
-const discussUrl = (slug) =>
-  `https://mobile.twitter.com/search?q=${encodeURIComponent(
-    `https://leerob.io/blog/${slug}`
-  )}`;
-
-export default function BlogLayout({ children, frontMatter }: { children, frontMatter }): JSX.Element {
+export default function BlogLayout({ children, frontMatter, slug }: { children, frontMatter, slug }): JSX.Element {
   return (
     <Page
       active="Blog"
@@ -50,6 +43,12 @@ export default function BlogLayout({ children, frontMatter }: { children, frontM
           <div className="prose dark:prose-dark max-w-none w-full">
             {children}
           </div>
+          <hr/>
+          <a href={`https://twitter.com/intent/tweet?text=${encodeURI('Hey check out this blog post by @AntarikshaVerm2.\n\nhttps://yummyweb.vercel.app/blog/' + slug)}`} 
+            target="__blank" 
+            className={styles.tweetButton}>
+              <span>Share on Twitter</span>
+          </a>
         </article>
       </div>
     </Page>
