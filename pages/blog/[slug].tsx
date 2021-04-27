@@ -2,15 +2,19 @@ import { getFiles, getFileBySlug } from '../../lib/mdx'
 import hydrate from 'next-mdx-remote/hydrate'
 import BlogLayout from '../../layout/blog'
 import MDXComponents from '../../components/MDXComponents'
+import { useRouter } from 'next/router'
 
-const BlogPost = ({ mdxSource, tweets, frontMatter }) => {
+const BlogPost = ({ mdxSource, frontMatter }) => {
     const content = hydrate(mdxSource, {
         components: {
           ...MDXComponents
         }
     });
 
-    return <BlogLayout frontMatter={frontMatter}>{content}</BlogLayout>;
+    const router = useRouter()
+    const { slug } = router.query
+
+    return <BlogLayout slug={slug} frontMatter={frontMatter}>{content}</BlogLayout>;
 }
 
 export async function getStaticPaths() {
