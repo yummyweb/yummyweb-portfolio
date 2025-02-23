@@ -16,13 +16,16 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve"
+    "jsx": "preserve",
+    "incremental": true
   },
   "include": [
     "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx"
-, "scripts/generate-rss.js", "scripts/generate-sitemap.js"  ],
+    "**/*.tsx",
+    "scripts/generate-rss.js",
+    "scripts/generate-sitemap.js"
+  ],
   "exclude": [
     "node_modules"
   ]

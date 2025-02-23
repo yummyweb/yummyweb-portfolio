@@ -24,7 +24,7 @@ const Button = ({ children, type, href, variant, onClick, disabled }: ButtonProp
     }
     if (href.startsWith('/')) {
         return (
-          <Link href={href} passHref>
+          <Link legacyBehavior href={href} passHref>
             <a>
               <button className={classes} type={type === 'submit' ? 'submit' : 'button'} disabled={disabled}>
                 {children}

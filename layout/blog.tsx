@@ -20,13 +20,13 @@ export default function BlogLayout({ children, frontMatter, slug }: { children, 
           </h1>
           <div>
             <div className={styles.publishedBy}>
-              <Image
+              {/* <Image
                 alt={frontMatter.author}
-                height={50}
-                width={50}
+                height={20}
+                width={20}
                 src={frontMatter.authorImage}
                 className={styles.authorImage}
-              />
+              /> */}
               <p className={styles.by}>
                 By {frontMatter.author}
               </p>
