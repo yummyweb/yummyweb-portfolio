@@ -13,7 +13,7 @@ export default function BlogLayout({ children, frontMatter, slug }: { children, 
       <div className="main">
         <article className={styles.article}>
           <span className={styles.imgWrapper}>
-            <Image src={frontMatter.image} width={2024} height={1012} layout="responsive" />
+            <Image alt="" src={frontMatter.image} width={2024} height={1012} layout="responsive" />
           </span>
           <h1>
             {frontMatter.title}
