@@ -4,6 +4,7 @@ import '../styles/globals.scss'
 
 function MyApp({ Component, pageProps }): JSX.Element {
   return (
+    //@ts-ignore: sdc
     <ThemeProvider defaultTheme="dark">
       <Head>
         <title>Antariksh Verma - Personal Blog</title>
