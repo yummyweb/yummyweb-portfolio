@@ -7,14 +7,15 @@ const About = (): JSX.Element => {
     <Page active="About">
       <div className={styles.main}>
         <div className={styles.logoContainer}>
-          <Image className={styles.logo} width="100" height="100" alt="Yum" src="/yum_logo.png" />
+          <Image className={styles.logo} width="100" height="100" alt="Yum" src="/" />
         </div>
-        <h1 className={styles.name}><span className={styles.hangLoose}>🤙</span> Yo, I'm yum.</h1>
+        <h1 className={styles.name}>Antariksh Verma</h1>
         <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime asperiores, aliquid consequatur cum quos ducimus voluptatibus tenetur neque est inventore alias, praesentium ex, deleniti sunt reiciendis eius placeat itaque ipsa recusandae omnis nobis quod.
+          I am currently a first-year engineering student at The Hong University of Science and Technology in New Territories, Hong Kong. Previously, I completed my high school graduation from Pathways School Gurgaon in India. I am passionated about computer science and startups.
         </p>
+        <br />
         <p>
-            <a href="/" className="link"><span data-content="Lorem ipsum" className="dotted">Lorem ipsum</span></a> dolor sit amet consectetur, adipisicing elit. Quod, <a className="link" href="/"><span className="dotted" data-content="necessitatibus?">necessitatibus?</span></a>
+          My relevant coursework includes COMP 2012H, COMP 2711, COMP 4461 and TEMG 4000H.
         </p>
       </div>
     </Page>

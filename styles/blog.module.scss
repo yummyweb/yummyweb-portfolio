@@ -9,6 +9,7 @@
 
 .search input {
     transition: all 150ms ease-out;
+
     &:hover,
     &:active,
     &:focus {
@@ -72,7 +73,7 @@
         margin-top: 1.25em;
         margin-bottom: 1.25em;
 
-        & > code {
+        &>code {
             margin: 0 3px;
             padding: 3px 7px;
             font-size: 1.1em;
@@ -135,6 +136,11 @@
             font-size: 18px;
         }
     }
+
+    img {
+        margin-top: 0.9em;
+        width: 80%;
+    }
 }
 
 .meta {
@@ -154,7 +160,7 @@
 }
 
 .authorImage {
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .by {
@@ -164,7 +170,7 @@
 .publishedBy {
     display: flex;
     align-items: center;
-    width: 90px;
+    width: 160px;
     justify-content: space-between;
 }
 

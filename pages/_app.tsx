@@ -6,7 +6,7 @@ function MyApp({ Component, pageProps }): JSX.Element {
   return (
     <ThemeProvider defaultTheme="dark">
       <Head>
-        <title>Yum - Software Dev</title>
+        <title>Antariksh Verma - Personal Blog</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Component {...pageProps} />

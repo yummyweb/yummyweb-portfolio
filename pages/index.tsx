@@ -8,24 +8,14 @@ interface IProps {
 }
 
 const Home = ({ posts }: IProps): JSX.Element => {
-  console.log(posts[0].split('.')[0])
-
   return (
     <Page active="Home">
-        <div className="main">
-          <h1><span className={styles.wave}>👋</span> Hi, my name is yum.</h1>
-          <p className={styles.description}>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate odit animi quisquam, ipsam deserunt veritatis eligendi? Accusantium quos aut minus?</p>
-          <hr />
-          <div className={styles.blogPosts}>
-            <h2>Check out my latest posts</h2>
-            <div className={styles.blog}>
-              <div className={styles.post}>
-                <h3>{ posts[0].split('.')[0] }</h3>
-              </div>
-            </div>
-          </div>
-          <NowPlaying />
-        </div>
+      <div className="main">
+        <h1><span className={styles.wave}>👋</span> Hi, my name is Antariksh.</h1>
+        <p className={styles.description}>Engineering student at The Hong University of Science and Technology. I am interested in blockchain, cryptocurrencies and programming languages.</p>
+        <hr />
+        <NowPlaying />
+      </div>
     </Page>
   )
 }

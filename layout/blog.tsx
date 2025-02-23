@@ -14,7 +14,7 @@ export default function BlogLayout({ children, frontMatter, slug }: { children, 
         <article className={styles.article}>
           <span className={styles.imgWrapper}>
             <Image src={frontMatter.image} width={2024} height={1012} layout="responsive" />
-          </span>          
+          </span>
           <h1>
             {frontMatter.title}
           </h1>
@@ -22,8 +22,8 @@ export default function BlogLayout({ children, frontMatter, slug }: { children, 
             <div className={styles.publishedBy}>
               <Image
                 alt={frontMatter.author}
-                height={24}
-                width={24}
+                height={50}
+                width={50}
                 src={frontMatter.authorImage}
                 className={styles.authorImage}
               />
@@ -37,17 +37,17 @@ export default function BlogLayout({ children, frontMatter, slug }: { children, 
               {format(parseISO(frontMatter.publishedAt), 'MMMM dd, yyyy')}
               {` • `}
               {/* <ViewCounter slug={frontMatter.slug} /> */}
-              1220 views
+              11 views
             </p>
           </div>
           <div className="prose dark:prose-dark max-w-none w-full">
             {children}
           </div>
-          <hr/>
-          <a href={`https://twitter.com/intent/tweet?text=${encodeURI('Hey check out this blog post by @AntarikshaVerm2.\n\nhttps://yummyweb.vercel.app/blog/' + slug)}`} 
-            target="__blank" 
+          <hr />
+          <a href={`https://twitter.com/intent/tweet?text=${encodeURI('Hey check out this blog post by @AntarikshaVerm2.\n\nhttps://yummyweb.vercel.app/blog/' + slug)}`}
+            target="__blank"
             className={styles.tweetButton}>
-              <span>Share on Twitter</span>
+            <span>Share on Twitter</span>
           </a>
         </article>
       </div>
