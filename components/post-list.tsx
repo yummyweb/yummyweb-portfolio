@@ -22,7 +22,7 @@ const PostList = ({ posts }: IProps): JSX.Element => {
                         <Link as={`/blog/${slug}`} href="/blog/[slug]">
                             <a aria-label={title}>
                                 <span className={styles.imgWrapper}>
-                                    <Image width={2024} height={1012} src={image} alt={title} /> 
+                                    <Image sizes="99%" style={{ width: '99%', height: 'auto' }} width={0} height={0} src={image} alt={title} />
                                 </span>
                             </a>
                         </Link>
