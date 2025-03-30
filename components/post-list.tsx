@@ -19,14 +19,14 @@ const PostList = ({ posts }: IProps): JSX.Element => {
                 const slug = post.filePath.replace(/\.mdx?$/, '')
                 return (
                     <li key={post.filePath}>
-                        <Link as={`/blog/${slug}`} href="/blog/[slug]">
+                        <Link legacyBehavior as={`/blog/${slug}`} href="/blog/[slug]">
                             <a aria-label={title}>
                                 <span className={styles.imgWrapper}>
                                     <Image sizes="99%" style={{ width: '99%', height: 'auto' }} width={0} height={0} src={image} alt={title} />
                                 </span>
                             </a>
                         </Link>
-                        <Link as={`/blog/${slug}`} href="/blog/[slug]">
+                        <Link legacyBehavior as={`/blog/${slug}`} href="/blog/[slug]">
                             <a className={styles.title}>{title}</a>
                         </Link>
                         <p className={styles.summary}>{summary}</p>
